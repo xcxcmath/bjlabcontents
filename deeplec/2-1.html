@@ -114,7 +114,7 @@
 bool NAND_perceptron(const bool x1, const bool x2)
 {
     matrix x(2, 1);
-    x(0, 0) = static_cast&lt;double&gt;x1; x(1, 0) = static_cast&lt;double&gt;x2;
+    x(0, 0) = static_cast&lt;double&gt;(x1); x(1, 0) = static_cast&lt;double&gt;(x2);
 
     matrix w(2, 1);
     w(0, 0) = -0.5; w(1, 0) = -0.5;
